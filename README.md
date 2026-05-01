@@ -1,28 +1,25 @@
 # CodeAlpha_Emotion-Recognition-from-Speech
 
-# Handwritten Digit Recognition
+# Emotion Recognition from Speech
 
-This project uses a Convolutional Neural Network (CNN) to recognize handwritten digits.
+This project extracts features from speech audio to identify emotions.
 
 ## 📌 Overview
-The model is trained on the MNIST dataset and can classify digits from 0 to 9.
+The goal is to process audio files and extract useful features for emotion classification.
 
 ## ⚙️ Approach
-- Loaded dataset using TensorFlow
-- Normalized pixel values
-- Reshaped images for CNN input
-- Built a simple CNN with Conv2D and MaxPooling layers
+- Loaded audio files using librosa
+- Extracted MFCC (Mel-Frequency Cepstral Coefficients)
+- Converted features into numerical arrays
 
-## 📊 Result
-
-Detected Number: 35427285637620854572539268473857420622404633247309658496027485424234226800075346302234365251052084275308254462672625348525322039266525823279546
-
-Accuracy: 0.9904999732971191
-
+## 📊 Output
+The script generates feature vectors that can be used to train a machine learning model.
 
 ## 🛠️ Technologies Used
 - Python
-- TensorFlow / Keras
+- Librosa
+- NumPy
 
 ## ▶️ How to Run
-Simply run:
+1. Place audio dataset inside `dataset/` folder  
+2. Run:
